@@ -26,7 +26,7 @@ index_path =  os.path.join(os.path.dirname(os.path.dirname(__file__)),'rest_API/
 SECRET_KEY = 'django-insecure-jk2i(raj9fqy&*xm59p#*entjf0cl@vgk5im#3m1z4nd#mepg#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -84,12 +84,8 @@ WSGI_APPLICATION = 'rest_API.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rest_framework',
-        'USER' : 'root' ,
-        'PASSWORD' : 'SAna2679627',
-        'HOST' : 'localhost', 
-        'PORT' :'3306'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':os.path.join(BASE_DIR , 'db.sqlite3'),
     }
 }
 
