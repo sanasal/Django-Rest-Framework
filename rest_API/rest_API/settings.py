@@ -26,9 +26,9 @@ index_path =  os.path.join(os.path.dirname(os.path.dirname(__file__)),'rest_API/
 SECRET_KEY = 'django-insecure-jk2i(raj9fqy&*xm59p#*entjf0cl@vgk5im#3m1z4nd#mepg#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app','localhost' , '127.0.0.1']
 
 
 # Application definition
